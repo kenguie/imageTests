@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>imageTest</title>
+</head>
+
+<body>
+	<h3>Image via Cloudinary</h3>
+	<img sizes="(max-width: 1480px) 100vw, 1480px" srcset="
+	http://res.cloudinary.com/image77/image/fetch/w_600,f_auto,q_auto/http://WNDEMO1.images.worldnow.com/images/14238266_G.jpg 767w,
+			http://res.cloudinary.com/image77/image/fetch/w_992,f_auto,q_auto/http://WNDEMO1.images.worldnow.com/images/14238266_G.jpg 1200w,
+			http://res.cloudinary.com/image77/image/fetch/w_1200,f_auto,q_auto/http://WNDEMO1.images.worldnow.com/images/14238266_G.jpg 1480w" src="http://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_1480/http://WNDEMO1.images.worldnow.com/images/14238266_G.jpg"
+			alt="image via cloudinary">
+
+	<h3>Image via Fastly</h3>
+	<img sizes="(max-width: 1480px) 100vw, 1480px" srcset="
+	http://WNDEMO1.images.worldnow.com/images/14238266_G.jpg?format=pjpg&quality=85&auto=webp&width=600 767w,
+		http://WNDEMO1.images.worldnow.com/images/14238266_G.jpg?format=pjpg&quality=85&auto=webp&width=992 1200w,
+		http://WNDEMO1.images.worldnow.com/images/14238266_G.jpg?format=pjpg&quality=85&auto=webp&width=1200 1480w" src="http://WNDEMO1.images.worldnow.com/images/14238266_G.jpg?format=pjpg&quality=85&auto=webp&width=1480" alt="image via fastly">
+
+</body>
+
+</html>
